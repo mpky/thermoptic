@@ -58,6 +58,7 @@ services:
       - 1.1.1.1
     ports:
       - 127.0.0.1:14111:14111
+      - 127.0.0.1:9223:9223  # Chrome restart control endpoint
   thermoptic:
     build: .
     volumes:
